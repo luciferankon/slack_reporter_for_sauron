@@ -18,7 +18,7 @@ func main() {
 	users, _ := api.GetUsers()
 	var userId string
 	for _, user := range users {
-		if user.Name == userName {
+		if (user.RealName == userName) || (user.Name == userName) {
 			userId = user.ID
 		}
 	}
